@@ -1,34 +1,7 @@
-const engToMorse = (inputStr) => {
-  const morseLookup = {
-    A: ".- ",
-    B: "-... ",
-    C: "-.-. ",
-    D: "-.. ",
-    E: ". ",
-    F: "..-. ",
-    G: "--. ",
-    H: ".... ",
-    I: ".. ",
-    J: ".--- ",
-    K: "-.- ",
-    L: ".-.. ",
-    M: "-- ",
-    N: "-. ",
-    O: "--- ",
-    P: ".--. ",
-    Q: "--.- ",
-    R: ".-. ",
-    S: "... ",
-    T: "- ",
-    U: "..- ",
-    V: "...- ",
-    W: ".-- ",
-    X: "-..- ",
-    Y: "-.-- ",
-    Z: "--.. ",
-    " ": "/ ",
-  };
+const { morseLookup } = require("./morseLookup");
 
+const engToMorse = (inputStr) => {
+  console.log(morseLookup);
   const splitStr = inputStr.toUpperCase().split("");
 
   let outputStr = "";
